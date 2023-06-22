@@ -1,0 +1,253 @@
+/* ---------------------- 우측 메뉴 슬라이드 ----------------------*/
+#slide_main_menu {
+    width: 230px;
+    height: 100%;
+    min-height: 990px;
+    background-color: #167ee6;
+    background-image: linear-gradient(180deg, #167ee6 10%, #3951a1 100%);
+    box-shadow: 10px 6px 10px rgba(121, 150, 183, 0.11);
+    z-index: 105;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    z-index: 105;
+}
+
+.slide_logo {
+    float: left;
+    width: 230px;
+    height: 80px;
+    position: relative;
+}
+
+.slide_logo>a {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#slide_main_menu img {
+    width: 100px;
+}
+
+.slide_item {
+    float: left;
+    width: 100%;
+}
+
+.slide_item>.btn_start {
+    display: block;
+    font-weight: 700;
+    text-align: center;
+    width: 90%;
+    height: 55px;
+    line-height: 55px;
+    margin: 0 auto;
+    margin-top: 20px;
+    color: #ffffff;
+    background: linear-gradient(to bottom, #4866af 20%, #2c4480 100%);
+    /* box-shadow: 0px 5px 10px 0px rgba(140, 140, 140, 0.22); */
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.slide_item>.btn_start:hover {
+    background: linear-gradient(to bottom, #2c4480 20%, #375399 100%);
+}
+
+.slide_item>.btn_start i {
+    margin-right: 10px;
+}
+
+.slide_menu {
+    float: left;
+    width: 100%;
+}
+
+.slide_menu>li {
+    width: 85%;
+    margin: 40px auto;
+}
+
+.slide_menu>li>a {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: bold;
+}
+
+.slide_menu>li>a:hover {
+    color: #ffffff;
+}
+
+.slide_menu>li>a>i {
+    margin-right: 10px;
+}
+
+.check_line {
+    display: block;
+    border-top: 1px solid rgba(255, 255, 255, 0.096);
+    opacity: 0.2;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.slide_btn {
+    display: block;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+
+.slide_btn .sidebarToggle {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.slide_btn .sidebarToggle {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    margin-top: 30px;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slide_btn .sidebarToggle::after {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.slide_btn .sidebarToggle::after {
+    font-weight: 900;
+    content: "\f104";
+    font-family: "Font Awesome 5 Free";
+}
+
+.slide_btn .sidebarToggle:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.slide_btn .sidebarToggle:hover::after {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* ---------------------- 메인 > 계약설정 ---------------------- */
+
+.slide_sub_menu_box {
+    margin-top: 10px !important;
+}
+
+.slide_sub_menu {
+    display: block;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.slide_sub_menu a {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.slide_sub_menu li:last-child a {
+    margin-bottom: 0;
+}
+
+.select_group {
+    display: inline-block;
+}
+
+.date_btn {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    color: #262626;
+    background-color: #f2f2f8;
+    border-color: #ccc;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.date_btn:hover {
+    color: #fff;
+    background-color: #495569;
+    border-color: #495569;
+}
+
+.select_group input {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    pointer-events: none;
+}
+
+.process_check {
+    margin-right: 15px;
+}
+
+.process_check input {
+    margin-right: 5px;
+}
+
+.search_result_text {
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+.search_result_text i {
+    font-size: 25px !important;
+}
+
+.table_control_btn_grop {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.control_btn_l {
+    float: left;
+}
+
+.control_btn_l li {
+    float: left;
+    margin-right: 5px;
+}
+
+.control_btn_l li:last-child {
+    margin-right: 0px;
+}
+
+.control_btn_r {
+    float: right;
+}
+
+.control_btn_r li {
+    float: left;
+    margin-right: 5px;
+}
+
+.control_btn_r li:last-child {
+    margin-right: 0px;
+}
+
+.fold_name {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 40px;
+}
+
+.fold_name .fold_icon {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.fold_name .fold_icon i {
+    font-size: 30px;
+}
